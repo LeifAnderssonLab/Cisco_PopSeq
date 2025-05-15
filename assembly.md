@@ -9,7 +9,6 @@
 #SBATCH -o hifiasm_himem_%j.out
 #SBATCH -e hifiasm_himem_%j.err
 
-hostname
 echo "Start time: `date +%A'-'%k:%M:%S`"
 
 hifiasm -o European_cisco_w_extra_data.hifiasm0.16.1.default -t 96 \
@@ -37,8 +36,17 @@ echo "End time: `date +%A'-'%k:%M:%S`"
 #SBATCH -o purge_dups_%j.out
 #SBATCH -e purge_dups_%j.err
 
-hostname
 echo "Start time: `date +%A'-'%k:%M:%S`"
+
+singularity exec purge_dups_v1.2.6.sif minimap2 -d European_cisco_w_extra_data.hifiasm0.16.1.default.bp.p_ctg.mmi \
+  European_cisco_w_extra_data.hifiasm0.16.1.default.bp.p_ctg.fasta
+
+singularity purge_dups_v1.2.6.sif minimap2 -x map-hifi -I 48G -t 96 European_cisco_w_extra_data.hifiasm0.16.1.default.bp.p_ctg.mmi \
+ data/*.fasta.gz  | gzip -c - > European_cisco_w_extra_data.hifiasm0.16.1.default.paf.gz
+
+singularity exec purge_dups_v1.2.6.sif pbcstat European_cisco_w_extra_data.hifiasm0.16.1.default.paf.gz
+singularity exec purge_dups_v1.2.6.sif calcuts PB.stat > cutoffs 2>calcults.log
+singularity exec purge_dups_v1.2.6.sif hist_plot.py -c cutoffs PB.stat PB.cov.png
 
 singularity exec purge_dups_v1.2.6.sif split_fa \
   European_cisco_w_extra_data.hifiasm0.16.1.default.bp.p_ctg.fasta > European_cisco_w_extra_data.hifiasm0.16.1.default.bp.p_ctg.fasta.split
