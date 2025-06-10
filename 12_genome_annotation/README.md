@@ -84,3 +84,59 @@ It also contains the final busco file, where busco was ran on the final manually
     ├── annotation_stat_before_manual_curation.txt
     └── final_busco_actinopterygii_odb10.txt
 ```
+
+# Reproducibility
+## List of github repositories used and versions during genome annotation analyses
+
+AGAT repository : agat 0.8.1
+
+GAAS repository : gaas 1.2.0
+
+Nextflow pipeline repository: 1.0
+
+## Tools version
+
+Nextflow (22.10.1) singularity-ce (3.8.0) BUSCO (5.4.6) 
+
+fastp (0.23.2) 
+
+hisat2 (2.1.0) 
+
+stringtie(2.2.1) 
+
+RepeatModeler package (2.0.2a) 
+
+RepeatMasker (4.1.2_p1) 
+
+RepeatRunner 
+
+MAKER package (3.01.02) 
+
+exonerate (2.4.0) 
+
+Blast (2.9.0) 
+
+Bioperl (1.7.2) 
+
+Augustus (3.3.3) 
+
+TRNAscan-se (1.3.1) 
+
+Snap (version 2013_11_29) 
+
+GeneMark-ET (4.3) 
+
+GeneMark(ES Suite version 4.48_3.60_lic) 
+
+Interproscan(5.59-91.0)
+
+Infernal (1.1.2) 
+
+
+## Databases version :
+
+Uniprot Swiss-Prot database (downloaded on 2022-12; 568363 proteins) 
+
+Rfam version 14.9 
+
+
