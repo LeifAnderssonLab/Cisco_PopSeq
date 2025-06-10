@@ -32,19 +32,19 @@ The 12_genome_annotation folder is organised in the following folders and files 
 
 Following is a description of each files and folders :
 
-The maker_abinition folder contains the busco folder and parameters folder linked to the maker abinitio run (evidence input + augustus input)
+The maker_abinitio folder contains the busco folder and parameters folder linked to the maker abinitio run (evidence input + augustus input)
 
 ```
 ├── maker_abinitio
 
 ```
-The busco folder contains the results of busco on the ouput of maker_abinitio
+The busco folder contains the results of busco on the ouput of the maker abinitio run
 ```
 │   ├── busco
 │   │   ├── short_summary.specific.actinopterygii_odb10.busco_evidence_longest_isoform.json
 │   │   └── short_summary.specific.actinopterygii_odb10.busco_evidence_longest_isoform.txt
 ```
-The parameters folder comprise the config files for the maker abinitio run
+The parameters folder contains the config files for the maker abinitio run
 ```
 │   └── parameters
 │       ├── maker_bopts.ctl
@@ -58,7 +58,7 @@ The maker_evidence folder contains the busco folder and parameters folder linked
 ├── maker_evidence
 ```
 
-The busco folder contains the results of busco on the ouput of maker evidence run
+The busco folder contains the results of busco on the ouput of the maker evidence run
 ```
 │   ├── busco
 │   │   ├── short_summary.specific.actinopterygii_odb10.busco_evidence_longest_isoform.json
@@ -74,7 +74,10 @@ The parameters folder contains the config files for the maker evidence run
 │       └── maker_opts.ctl
 ```
 
-The statitics folder contains the annotation statistics before the manual curation (before deleting the genes without any functional annotation) and after manual curation. it also contains the final busco file (which is the same as the busco results from the maker abinitio run)
+The statitics folder contains the annotation statistics before the manual curation  (before deleting the genes without any functional annotation) and after manual curation. 
+
+It also contains the final busco file, where busco was ran on the final manually curated gff (which is showing the same results as the busco results from the maker abinitio run)
+
 ```
 └── statistics
     ├── annotation_stat_after_manual_curation.txt
