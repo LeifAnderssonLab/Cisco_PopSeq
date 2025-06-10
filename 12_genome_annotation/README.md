@@ -74,7 +74,7 @@ The parameters folder contains the config files for the maker evidence run
 │       └── maker_opts.ctl
 ```
 
-The statitics folder contains the annotation statistics before the manual curation  (before deleting the genes without any functional annotation) and after manual curation. 
+The statistics folder contains the annotation statistics before the manual curation  (before deleting the genes without any functional annotation) and after manual curation. 
 
 It also contains the final busco file, where busco was ran on the final manually curated gff (which is showing the same results as the busco results from the maker abinitio run)
 
