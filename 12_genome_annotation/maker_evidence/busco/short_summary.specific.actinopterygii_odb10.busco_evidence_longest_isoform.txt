@@ -1,0 +1,18 @@
+# BUSCO version is: 5.4.6 
+# The lineage dataset is: actinopterygii_odb10 (Creation date: 2021-02-19, number of genomes: 26, number of BUSCOs: 3640)
+# Summarized benchmarking in BUSCO notation for file /active/lucile/cisco/maker/maker_evidence/maker_output_processed_genome/maker_noduplicate_longest_isoform.fa
+# BUSCO was run in mode: proteins
+
+	***** Results: *****
+
+	C:88.9%[S:53.0%,D:35.9%],F:3.3%,M:7.8%,n:3640	   
+	3235	Complete BUSCOs (C)			   
+	1928	Complete and single-copy BUSCOs (S)	   
+	1307	Complete and duplicated BUSCOs (D)	   
+	120	Fragmented BUSCOs (F)			   
+	285	Missing BUSCOs (M)			   
+	3640	Total BUSCO groups searched		   
+
+Dependencies and versions:
+	hmmsearch: 3.1
+	busco: 5.4.6
