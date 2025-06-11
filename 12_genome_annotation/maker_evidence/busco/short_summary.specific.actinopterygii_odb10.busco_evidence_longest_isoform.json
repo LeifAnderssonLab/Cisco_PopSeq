@@ -1,0 +1,49 @@
+{
+    "parameters": {
+        "out_path": "/active/lucile/cisco/maker/maker_evidence/maker_output_processed_genome",
+        "cpu": "20",
+        "force": "False",
+        "restart": "False",
+        "quiet": "False",
+        "download_path": "/active/lucile/cisco/maker/maker_evidence/maker_output_processed_genome/busco_downloads",
+        "datasets_version": "odb10",
+        "offline": "False",
+        "download_base_url": "https://busco-data.ezlab.org/v5/data/",
+        "auto-lineage": "False",
+        "auto-lineage-prok": "False",
+        "auto-lineage-euk": "False",
+        "update-data": "False",
+        "use_augustus": "False",
+        "batch_mode": "False",
+        "tar": "False",
+        "in": "/active/lucile/cisco/maker/maker_evidence/maker_output_processed_genome/maker_noduplicate_longest_isoform.fa",
+        "out": "busco_evidence_longest_isoform",
+        "mode": "proteins",
+        "lineage_dataset": "/active/lucile/cisco/maker/maker_evidence/maker_output_processed_genome/busco_downloads/lineages/actinopterygii_odb10",
+        "metaeuk_parameters": "--disk-space-limit=1G,--remove-tmp-files=1",
+        "metaeuk_rerun_parameters": "--disk-space-limit=1G,--remove-tmp-files=1",
+        "main_out": "/active/lucile/cisco/maker/maker_evidence/maker_output_processed_genome/busco_evidence_longest_isoform",
+        "lineage_results_dir": "run_actinopterygii_odb10",
+        "domain": "eukaryota"
+    },
+    "lineage_dataset": {
+        "name": "actinopterygii_odb10",
+        "creation_date": "2021-02-19",
+        "number_of_buscos": "3640",
+        "number_of_species": "26"
+    },
+    "versions": {
+        "hmmsearch": 3.1,
+        "busco": "5.4.6"
+    },
+    "results": {
+        "one_line_summary": "C:88.9%[S:53.0%,D:35.9%],F:3.3%,M:7.8%,n:3640",
+        "Complete": 88.9,
+        "Single copy": 53.0,
+        "Multi copy": 35.9,
+        "Fragmented": 3.3,
+        "Missing": 7.8,
+        "n_markers": 3640,
+        "domain": "eukaryota"
+    }
+}

@@ -1,0 +1,145 @@
+--------------------------------------------------------------------------------
+
+Compute mrna
+
+Number of gene                               51040
+Number of mrna                               125922
+Number of mrnas with utr both sides          83714
+Number of mrnas with at least one utr        106196
+Number of cds                                125922
+Number of exon                               1267184
+Number of five_prime_utr                     94499
+Number of three_prime_utr                    95411
+Number of exon in cds                        1124261
+Number of exon in five_prime_utr             176047
+Number of exon in three_prime_utr            155558
+Number of intron in cds                      998339
+Number of intron in exon                     1141262
+Number of intron in five_prime_utr           81548
+Number of intron in three_prime_utr          60147
+Number gene overlapping                      2374
+Number of single exon gene                   4201
+Number of single exon mrna                   6492
+mean mrnas per gene                          2.5
+mean cdss per mrna                           1.0
+mean exons per mrna                          10.1
+mean five_prime_utrs per mrna                0.8
+mean three_prime_utrs per mrna               0.8
+mean exons per cds                           8.9
+mean exons per five_prime_utr                1.9
+mean exons per three_prime_utr               1.6
+mean introns in cdss per mrna                7.9
+mean introns in exons per mrna               9.1
+mean introns in five_prime_utrs per mrna     0.6
+mean introns in three_prime_utrs per mrna    0.5
+Total gene length                            975231414
+Total mrna length                            2795448415
+Total cds length                             191940195
+Total exon length                            352461981
+Total five_prime_utr length                  35235373
+Total three_prime_utr length                 125286413
+Total intron length per cds                  2047750517
+Total intron length per exon                 2442986434
+Total intron length per five_prime_utr       305286836
+Total intron length per three_prime_utr      84551881
+mean gene length                             19107
+mean mrna length                             22199
+mean cds length                              1524
+mean exon length                             278
+mean five_prime_utr length                   372
+mean three_prime_utr length                  1313
+mean cds piece length                        170
+mean five_prime_utr piece length             200
+mean three_prime_utr piece length            805
+mean intron in cds length                    2051
+mean intron in exon length                   2140
+mean intron in five_prime_utr length         3743
+mean intron in three_prime_utr length        1405
+Longest gene                                 793734
+Longest mrna                                 793734
+Longest cds                                  43059
+Longest exon                                 38368
+Longest five_prime_utr                       39429
+Longest three_prime_utr                      40207
+Longest cds piece                            14949
+Longest five_prime_utr piece                 38362
+Longest three_prime_utr piece                38188
+Longest intron into cds part                 472761
+Longest intron into exon part                472761
+Longest intron into five_prime_utr part      304008
+Longest intron into three_prime_utr part     439943
+Shortest gene                                63
+Shortest mrna                                6
+Shortest cds                                 6
+Shortest exon                                1
+Shortest five_prime_utr                      1
+Shortest three_prime_utr                     1
+Shortest cds piece                           1
+Shortest five_prime_utr piece                1
+Shortest three_prime_utr piece               1
+Shortest intron into cds part                20
+Shortest intron into exon part               20
+Shortest intron into five_prime_utr part     20
+Shortest intron into three_prime_utr part    20
+
+--------------------------------------------------------------------------------
+
+ _______________________________________________________________________________________________________
+|                         |  Nb term linked to mRNA |    Nb mRNA with term    |    Nb gene with term    |
+|_______________________________________________________________________________________________________|
+|             -           |          18765          |          18765          |          9291           |
+|_______________________________________________________________________________________________________|
+|         AntiFam         |            37           |            37           |            34           |
+|_______________________________________________________________________________________________________|
+|           CDD           |          58278          |          42393          |          16098          |
+|_______________________________________________________________________________________________________|
+|           Coils         |          28842          |          28842          |          10403          |
+|_______________________________________________________________________________________________________|
+|          FunFam         |          127325         |          58754          |          21846          |
+|_______________________________________________________________________________________________________|
+|          Gene3D         |          144228         |          87679          |          33842          |
+|_______________________________________________________________________________________________________|
+|           Hamap         |          1394           |          1313           |           650           |
+|_______________________________________________________________________________________________________|
+|         InterPro        |          419483         |          109847         |          43612          |
+|_______________________________________________________________________________________________________|
+|         MetaCyc         |        19921022         |          78866          |          30898          |
+|_______________________________________________________________________________________________________|
+|        MobiDBLite       |          70850          |          70850          |          28295          |
+|_______________________________________________________________________________________________________|
+|       Ontology_term     |          298222         |          109847         |          43612          |
+|_______________________________________________________________________________________________________|
+|         PANTHER         |          107718         |          107718         |          42447          |
+|_______________________________________________________________________________________________________|
+|           PIRSF         |          5604           |          5509           |          2564           |
+|_______________________________________________________________________________________________________|
+|          PRINTS         |          31250          |          24926          |          10394          |
+|_______________________________________________________________________________________________________|
+|           Pfam          |          159146         |          97842          |          38386          |
+|_______________________________________________________________________________________________________|
+|     ProSitePatterns     |          37668          |          29311          |          11436          |
+|_______________________________________________________________________________________________________|
+|     ProSiteProfiles     |          91233          |          61056          |          22990          |
+|_______________________________________________________________________________________________________|
+|         Reactome        |        87562431         |          101096         |          39555          |
+|_______________________________________________________________________________________________________|
+|           SFLD          |           863           |           443           |           149           |
+|_______________________________________________________________________________________________________|
+|           SMART         |          87190          |          55545          |          20341          |
+|_______________________________________________________________________________________________________|
+|       SUPERFAMILY       |          117980         |          83382          |          32586          |
+|_______________________________________________________________________________________________________|
+|         TIGRFAM         |          5186           |          4698           |          2000           |
+|_______________________________________________________________________________________________________|
+
+nb mRNA without Functional annotation (-,AntiFam,CDD,Coils,FunFam,Gene3D,Hamap,InterPro,MetaCyc,MobiDBLite,Ontology_term,PANTHER,PIRSF,PRINTS,Pfam,ProSitePatterns,ProSiteProfiles,Reactome,SFLD,SMART,SUPERFAMILY,TIGRFAM) = 2808 (remind: total mRNA = 125922)
+nb mRNA with Functional annotation (-,AntiFam,CDD,Coils,FunFam,Gene3D,Hamap,InterPro,MetaCyc,MobiDBLite,Ontology_term,PANTHER,PIRSF,PRINTS,Pfam,ProSitePatterns,ProSiteProfiles,Reactome,SFLD,SMART,SUPERFAMILY,TIGRFAM) = 123114 (remind: total mRNA = 125922)
+nb gene without Functional annotation (-,AntiFam,CDD,Coils,FunFam,Gene3D,Hamap,InterPro,MetaCyc,MobiDBLite,Ontology_term,PANTHER,PIRSF,PRINTS,Pfam,ProSitePatterns,ProSiteProfiles,Reactome,SFLD,SMART,SUPERFAMILY,TIGRFAM) = 553 (remind: total gene = 51040)
+nb gene with Functional annotation (-,AntiFam,CDD,Coils,FunFam,Gene3D,Hamap,InterPro,MetaCyc,MobiDBLite,Ontology_term,PANTHER,PIRSF,PRINTS,Pfam,ProSitePatterns,ProSiteProfiles,Reactome,SFLD,SMART,SUPERFAMILY,TIGRFAM) = 50487 (remind: total gene = 51040)
+
+We found 42326 genes with <Name> attribute. (remind: total gene = 51040)
+We found 109959 mRNAs with <Name> attribute. They probably have the same names as their parent genes. (remind: total mRNA = 125922)
+No gene with <description> attribute found.
+No mRNA with <description> attribute found.
+We found 43995 genes with <product> attribute.
+We have 112863 mRNAs with <product> attribute.
